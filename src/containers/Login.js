@@ -14,6 +14,7 @@ export default class Login {
     const formAdmin = this.document.querySelector(`form[data-testid="form-admin"]`)
     formAdmin.addEventListener("submit", this.handleSubmitAdmin)
   }
+  
   handleSubmitEmployee = e => {
     e.preventDefault()
     const user = {
@@ -31,7 +32,7 @@ export default class Login {
         this.onNavigate(ROUTES_PATH['Bills'])
         this.PREVIOUS_LOCATION = ROUTES_PATH['Bills']
         PREVIOUS_LOCATION = this.PREVIOUS_LOCATION
-        this.document.body.style.backgroundColor = "#fff"
+        this.document.body.style.backgroundColor="#fff"
       })
 
   }
